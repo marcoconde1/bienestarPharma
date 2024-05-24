@@ -11,7 +11,9 @@ function crearTicket(){
 
     date_default_timezone_set("America/La_Paz");
 
-    $fecha_emision = date("Y-m-d H:i:s");
+   $fecha_emision = date("Y-m-d H:i:s");
+  
+
     $consulta = $conexion->prepare("INSERT INTO ticket (id, fecha_emision, atendido) VALUES (?, ?, ?)");
     $consulta->bind_param("ssi", $id, $fecha_emision, $atendido);
     $atendido = 0; 

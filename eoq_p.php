@@ -90,12 +90,7 @@ if (isset($_SESSION["ci"])) {
     <nav class="navbar navbar-expand-lg col-md-2 d-none d-md-block sidebar p-3" style="background-color: rgba(255, 255, 255, 0.8); ">
       <div class="sidebar-sticky">
         <ul class="navbar-nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link hvr-float fw-bold " href="datos.php">Ventas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hvr-float fw-bold" href="#">Graficos</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link hvr-float fw-bold " href="eoq.php">EOQ basico</a>
           </li>
@@ -106,7 +101,7 @@ if (isset($_SESSION["ci"])) {
             <a class="nav-link hvr-float fw-bold" href="teoria_colas.php">Teoria de colas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-float fw-bold" href="#">Cadenas de Markov</a>
+            <a class="nav-link hvr-float fw-bold" href="cadenas_markov.php">Cadenas de Markov</a>
           </li>
         </ul>
       </div>
@@ -119,7 +114,7 @@ if (isset($_SESSION["ci"])) {
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" class="form-label" method="post">
                <div class="row justify-content-center"> 
                 <div class="col-md-3 mb-3 ">
-                    <select name="opcion"  class="form-select">
+                    <select name="opcion"  class="form-select hvr-float">
                         <option value="diario" <?php if(isset($_POST['opcion']) && $_POST['opcion'] == 'diario') echo 'selected="selected"'; ?>>EOQ Diario</option>
                         <option value="mensual" <?php if(isset($_POST['opcion']) && $_POST['opcion'] == 'mensual') echo 'selected="selected"'; ?>>EOQ Mensual</option>
                         <option value="anual" <?php if(isset($_POST['opcion']) && $_POST['opcion'] == 'anual') echo 'selected="selected"'; ?>>EOQ Anual</option>
@@ -128,7 +123,7 @@ if (isset($_SESSION["ci"])) {
                 
                 
                 <div class="col-md-3 mb-3 d-grid gap-2">
-                    <input  type="submit" value="Seleccionar" class="btn btn-primary ">
+                    <input  type="submit" value="Seleccionar" class="btn btn-primary hvr-float">
                 </div>
                 </div>
             </form>
