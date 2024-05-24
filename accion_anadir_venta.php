@@ -14,7 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Insertar la venta y los productos vendidos en la base de datos
         $ticket = $_POST["ticket"];
-        $fecha_fin = date("Y-m-d H:i:s"); // Obtener la fecha y hora actual
+
+        $fecha_fin = date("Y-m-d H:i:s");
+       
+
+         // Obtener la fecha y hora actual
         $total = 0; // Inicializar el total de la venta
 
         // Calcular el total de la venta y preparar la consulta para insertar la venta

@@ -92,27 +92,27 @@ if (isset($_SESSION["ci"])) {
   </div>
 </nav>
 
-<div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <h1 class="display-4">¡Bienvenido al Sistema de Información de Bienestar Pharma, <?php echo htmlspecialchars($row['nombre']); ?>!</h1>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="imagenes/fondo_0.jpg" alt="First slide">
+              <div class="carousel-caption d-none d-md-block text-center" style="top: 65%; transform: translateY(-50%); font-size: 2em;">
+                <p class="fs-1 fw-bold hvr-grow-rotate">¡Bienvenido al Sistema de Información de Bienestar Pharma, <?php echo htmlspecialchars($row['nombre']); ?>!</p>
+              </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="imagenes/fondo_1.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block text-center" style="top: 65%; transform: translateY(-50%); font-size: 2em;">
+                <p class="fs-1 fw-bold hvr-grow-rotate">¡Bienvenido al Sistema de Información de Bienestar Pharma, <?php echo htmlspecialchars($row['nombre']); ?>!</p>
+            </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="imagenes/fondo_2.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block text-center" style="top: 65%; transform: translateY(-50%); font-size: 2em;">
+                <p class="fs-1 fw-bold hvr-grow-rotate">¡Bienvenido al Sistema de Información de Bienestar Pharma, <?php echo htmlspecialchars($row['nombre']); ?>!</p>
+            </div>
         </div>
     </div>
 </div>

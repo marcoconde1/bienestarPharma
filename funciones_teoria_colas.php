@@ -176,9 +176,6 @@ function calcularProbabilidadN($ro, $n) {
     return (1 - $ro) * pow($ro, $n);
 }
 
-function calcularExp($u, $ro, $t) {
-    return exp(-$u * (1 - $rot) * $t);
-}
 
 function calcularWSt($u, $ro ,$t) {
     return $ro * pow(M_E, (-$u * (1 - $ro) * $t));
@@ -189,30 +186,4 @@ function calcularWqt($u, $ro ,$t) {
 }
 
 
-/*
-$promedio_diferencia = obtenerPromedioDiferencia($conexion);
-$mu = obtenerMu($conexion);
-
-$x = 1 / $promedio_diferencia; // Tasa de llegada (clientes por hora)
-$u = 1 / $mu; // Tasa de servicio (clientes por hora)
-*/
-?>
-<!--
-<p>landa: <?php echo $x; ?></p>
-<p>mu: <?php echo $u; ?></p>
--->
-<?php
-/*
-// Calcular los resultados
-$Wq = calcularWq($x, $u);
-$Lq = calcularLq($x, $u);
-$Ls = calcularLs($x, $u);
-$Ws = calcularWs($x, $u);
-
-// Mostrar los resultados
-echo "Tiempo de espera en la cola (Wq): " . $Wq . "<br>";
-echo "Número promedio de clientes en la cola (Lq): " . $Lq . "<br>";
-echo "Número promedio de clientes en el sistema (Ls): " . $Ls . "<br>";
-echo "Tiempo de espera en el sistema (Ws): " . $Ws . "<br>";
-*/
 ?>
